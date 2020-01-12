@@ -1,5 +1,7 @@
 users = {}
-users[:gregors] = [99, 100, 80]
-scores = users[:gregors]
+users["gregors"] = [99, 100, 80]
+print "input name: "
+name = gets.chomp
+scores = users[name]
 avg = (scores.sum / scores.size)
 puts "Average score: #{avg}"

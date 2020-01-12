@@ -1,5 +1,6 @@
 users = {}
 users["gregors"] = [99, 100, 80]
-scores = users.get("gregors")
+name = input("name: ")
+scores = users.get(name)
 avg = sum(scores) / len(scores)
 print(f"Average score: {avg}")
